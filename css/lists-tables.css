@@ -1,0 +1,103 @@
+.unordered 
+{ list-style-type: disc; } 
+
+.nested-ul 
+{ list-style-type: circle; }
+.unordered {
+    line-height: 150%;
+    }
+    .unordered {
+        background: #199993;
+        padding: 20px;
+        width: 30%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .unordered li {
+        background: #caf0f1;
+        margin: 5px;
+        }
+        
+        .nested-ul li {
+        background: #e2f2f7;
+        margin: 5px;
+        }
+
+    .ordered {
+            background: #4f4086;            
+            padding: 20px;            
+            width: 20%;            
+            font-family: sans-serif;            
+            font-size: 1.3em;           
+            }
+            
+    .ordered li {            
+            background: #a7aed8;            
+            padding: 5px;          
+            margin-left: 20px;          
+            }
+
+    .custom-box-list {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+    .custom-box-list li {
+                counter-increment: step-counter;
+                margin-bottom: 10px;
+            }
+    .custom-box-list li::before {
+                content: counter(step-counter);
+                margin-right: 5px;
+                font-size: 50%;
+                background-color: rgb(69, 100, 129);
+                color: white;
+                font-weight: bold;
+                padding: 3px 8px;
+                border-radius: 3px;
+            }
+
+            .list-image {
+                list-style: none;
+                padding-left: 0;
+            }
+            .list-image li {
+                position: relative;
+                padding-left: 30px;
+                line-height: 170%;
+            }
+            .list-image li:before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-image: url('daisy.png');
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .popular-sites {
+                list-style: none;
+                padding-left: 0;
+            }
+            .popular-sites li {
+                position: relative;
+                padding-left: 30px;
+                line-height: 170%;
+
+            }
+            .popular-sites li::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-image: url('video-conference.png');
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
